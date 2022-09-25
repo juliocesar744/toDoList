@@ -1,0 +1,32 @@
+:root {
+    --gray-200: #F2F2F2;
+    --gray-300: #D9D9D9;
+    --gray-400: #808080;
+    --gray-500: #333333;
+    --gray-600: #262626;
+    --gray-700: #0D0D0D;
+
+    --blue-300: #4EA8DE;
+    --blue-500: #1E6F9F;
+
+    --purple-300: #8284FA;
+
+    --red-500: #f75a68
+}
+
+:focus {
+    outline: transparent;
+    box-shadow: 0 0 0 2px var(--green-500);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+
+body {
+    background: var(--gray-700);
+}
