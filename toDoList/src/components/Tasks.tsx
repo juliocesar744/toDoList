@@ -2,7 +2,6 @@ import { ClipboardText } from 'phosphor-react';
 import { useState } from 'react';
 import styles from './Tasks.module.css'
 
-const [tasks, setTasks] = useState([]);
 
 function Tasks() {
     return (
@@ -21,7 +20,6 @@ function Tasks() {
                         </div>
                     </div>
                 </div>
-                {tasks.length === 0}
                 <div className={styles.semTarefas}>
                     <ClipboardText color={"#808080"} size={47} />
                     <p><strong>Você ainda não tem tarefas cadastradas</strong></p>
