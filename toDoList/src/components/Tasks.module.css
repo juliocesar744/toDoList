@@ -1,4 +1,14 @@
 .qtd {
+    width: 75px;
+    height: 19px;
+    background: var(--gray-500);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qtdPrimeira {
     width: 25px;
     height: 19px;
     background: var(--gray-500);
@@ -44,4 +54,8 @@
 .semTarefas p strong{
     color: var(--gray-500);
     font-size: 16px;
+}
+
+.checkbox {
+    padding-top: 1rem;
 }

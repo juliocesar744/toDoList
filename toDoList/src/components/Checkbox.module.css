@@ -1,0 +1,35 @@
+.checkbox {
+    width: 100%;
+    border: 1px solid var(--gray-500);
+    border-radius: 1rem;
+    background-color: var(--gray-600);
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.label {
+    margin: 2rem;
+    
+}
+
+.trash {
+    margin: 2rem;
+    color: var(--gray-400);
+    
+}
+
+.checkboxClick {
+    background-color: none;
+    width: 1.09rem;
+    height: 1.09rem;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 2px solid var(--blue-300);
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+    margin-right: 1rem;
+}

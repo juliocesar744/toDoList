@@ -32,4 +32,5 @@
 .buttonCreate:hover{
     background: var(--blue-300);
     cursor: pointer;
+    transition: 0.3s;
 }
