@@ -1,9 +1,7 @@
 import  Header  from './components/Header'
 import  Activities  from './components/Activities'
-import  Tasks  from './components/Tasks'
 
 import './global.css'
-import styles from './App.module.css'
 
 function App() {
   return (
@@ -11,9 +9,6 @@ function App() {
       <Header />
       <div>
         <Activities />
-      </div>
-      <div className={styles.tasks}>
-        <Tasks />
       </div>
     </div>
   )

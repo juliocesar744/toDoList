@@ -7,18 +7,30 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
 }
 
 .label {
     margin: 2rem;
-    
 }
 
-.trash {
+.buttonTrash {
     margin: 2rem;
-    color: var(--gray-400);
-    
+    height: 2rem;
+    width: 2rem;
+    background-color: transparent;
+    border: none;
+    color: black;
+    cursor: pointer;
+}
+
+.buttonTrash:hover {
+    margin: 2rem;
+    height: 2rem;
+    width: 2rem;
+    background-color: var(--gray-400);
+    border-radius: 0.5rem;
+    border: none;
+    color: black;
 }
 
 .checkboxClick {
@@ -29,7 +41,12 @@
     vertical-align: middle;
     border: 2px solid var(--blue-300);
     outline: none;
-    appearance: none;
     cursor: pointer;
     margin-right: 1rem;
+}
+
+.labelTrue {
+    margin: 2rem;
+    text-decoration-line: line-through; 
+    color: var(--gray-400);
 }

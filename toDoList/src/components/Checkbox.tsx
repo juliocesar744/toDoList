@@ -1,23 +1,42 @@
-import { Check, Trash } from "phosphor-react";
+import { Trash } from "phosphor-react";
 import { useState } from "react";
 
 import styles from './Checkbox.module.css'
 
-function Checkbox() {
-    const [checked, setChecked] = useState(false);
+interface Tasks {
+    name: string;
+    checked: boolean;
+}
+
+interface Checkbox {
+    name: string;
+    checked: boolean;
+    handleDelete: (name: string) => void;
+    countTasks: (name: string) => void;
+    newTask: Tasks[];
+}
+
+function Checkbox( { name, checked, handleDelete, newTask, countTasks }: Checkbox) {
+
+    const [selected, setSelected] = useState(checked)
 
     return (
         <div className={styles.checkbox}>
-            <label className={styles.label}>
+            <label className={selected == false ? styles.label : styles.labelTrue}>
                 <input type="checkbox"
                     className={styles.checkboxClick}
-                    defaultChecked={checked}
-                    checked={checked}                    
-                    onChange={() => setChecked(!checked)}
+                    checked={selected}
+                    onChange={() => { countTasks(name); setSelected(!selected); } }
                 />
-                Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.
+                {name}
             </label>
-            <Trash className={styles.trash} size={30}  color="#808080"/>
+            <button className={styles.buttonTrash}>
+                <Trash
+                    className={styles.teste}
+                    size={24}
+                    onClick={(e) => handleDelete(name)}
+                />
+            </button>
         </div>
     )
 }

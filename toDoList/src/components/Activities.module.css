@@ -16,6 +16,14 @@
     background: var(--gray-600);
 }
 
+.line {
+    width: 45.5rem;
+    height: 0.01rem;
+    border-radius: 1rem;
+    background-color: var(--gray-500);
+    margin-bottom: 2rem;
+}
+
 .buttonCreate {
     display: flex;
     font-size: 12px;
@@ -33,4 +41,79 @@
     background: var(--blue-300);
     cursor: pointer;
     transition: 0.3s;
+}
+
+.tarefasText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 4.375rem;
+}
+
+.tasks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.semTarefas {
+    display: table;
+    text-align: center; 
+    margin: auto;
+    padding-top: 1rem;
+}
+
+.semTarefas p {
+    color: var(--gray-500);
+    font-size: 16px;
+}
+
+.semTarefas p strong{
+    color: var(--gray-500);
+    font-size: 16px;
+}
+
+.tarefasCriadas {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.tarefasConcluidas {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.4rem;
+    width: 35rem;
+}
+
+.qtd {
+    width: 75px;
+    height: 19px;
+    background: var(--gray-500);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qtdPrimeira {
+    width: 25px;
+    height: 19px;
+    background: var(--gray-500);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarefas {
+    width: 46rem;
+    gap: 0.5rem;
+}
+
+.checkbox {
+    padding-top: 1rem;
 }
